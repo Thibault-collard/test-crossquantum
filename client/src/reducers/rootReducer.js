@@ -1,9 +1,11 @@
 import {
   SET_RECENT_MOVIES,
+  SET_GENRE_MOVIES
 } from "../actions/types";
 
 const initialState = {
   movies: {},
+  genre:{}
 };
 
 export default function(state = initialState, action) {
@@ -12,6 +14,11 @@ export default function(state = initialState, action) {
       return {
         ...state,
         movies: action
+      };
+    case SET_GENRE_MOVIES:
+      return {
+        ...state,
+        genre: action
       };
     default:
       return state;

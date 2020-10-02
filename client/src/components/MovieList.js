@@ -17,7 +17,7 @@ class MovieList extends Component {
                     <Card.Text style={{height:"110px",overflowY:"scroll",scrollbarColor: "lightgrey #d3d3d300",fontSize:"0.88rem"}}>
                     {item.overview}
                     </Card.Text>
-                    <Button style={{backgroundColor: "#a81e41",border: "0px"}}> See more </Button>
+                    <Button style={{backgroundColor: "#a81e41",border: "0px"}} href={`/movies/${item.id}`}> See more </Button>
                   </Card.Body>
                 </Card>
                 ))} 

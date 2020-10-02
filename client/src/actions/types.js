@@ -1,1 +1,2 @@
 export const SET_RECENT_MOVIES = "SET_RECENT_MOVIES";
+export const SET_GENRE_MOVIES = "SET_GENRE_MOVIES";
