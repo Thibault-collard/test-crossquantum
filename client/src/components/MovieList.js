@@ -2,12 +2,16 @@ import React, { Component } from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
-
+import _ from 'lodash';
 class MovieList extends Component {
+  
+  addToLocalStorage = e => {
+    localStorage.setItem(`${e.target.value}`, _.find(this.props.list, { 'id': parseInt(e.target.value)}).original_title);
+  };
+
   render() {
     return (
         <div>
-          
               <Row>
                   {this.props.list.map( (item,i) => (
                   <Card style={{ width: '21rem', margin: "25px"}}>
@@ -18,6 +22,8 @@ class MovieList extends Component {
                     {item.overview}
                     </Card.Text>
                     <Button style={{backgroundColor: "#a81e41",border: "0px"}} href={`/movies/${item.id}`}> See more </Button>
+                    <Button onClick={this.addToLocalStorage} value={item.id} style={{backgroundColor: "black",border: "0px",marginLeft:"10px"}}> Add to my list </Button>
+
                   </Card.Body>
                 </Card>
                 ))} 

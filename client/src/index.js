@@ -6,10 +6,12 @@ import { Provider } from "react-redux";
 import registerServiceWorker from './registerServiceWorker';
 import { BrowserRouter, Route } from 'react-router-dom';
 import store from "./store/store";
+import Nav from "./components/Navbar"
 
 ReactDOM.render(
 	<div>
 		<Provider store={store}>
+			<Nav/>
 		<BrowserRouter>
 			<Route exact path="/movies/:id" component={SinglePageMovies}/>
 			<Route exact path="/" component={App} />

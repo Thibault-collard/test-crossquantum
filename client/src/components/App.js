@@ -6,7 +6,7 @@ import store from '../store/store';
 import MovieList from './MovieList';
 import SortButton from './SortButton';
 import Container from 'react-bootstrap/Container';
-
+import MyListButton from './MyListButton'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 class App extends Component {
@@ -16,22 +16,15 @@ class App extends Component {
         this.state = {
             list: [],
         };
-    } //end constructor
+    }
 
     componentDidMount() {
-
       this.props.getLatestMovies()
     }
 
     componentWillReceiveProps() {
       this.setState({ list: store.getState().movies.list_recent});
-      
-      
     }
-
-    onSubmit = (e) =>{
-      e.preventDefault();
-    };
 
     render() {
       
@@ -39,7 +32,8 @@ class App extends Component {
         return (
           <>
           <Container style={{maxWidth: "1555px"}}>
-            <SortButton list={this.state.list}/>
+              <MyListButton/>
+              <SortButton list={this.state.list}/>
             <MovieList list={this.state.list}/>
           </Container>
           </>

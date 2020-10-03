@@ -24,12 +24,13 @@ class SortButton extends Component {
 						<Dropdown.Toggle style={{backgroundColor:"rgb(168, 30, 65)",border:"0px"}}>
 							Sort by : 
 						</Dropdown.Toggle>
-
+						
 						<Dropdown.Menu>
 							<Dropdown.Item onClick={this.most} href="#/action-1"> Most recent releasing date</Dropdown.Item>
 							<Dropdown.Item onClick={this.least} href="#/action-2"> Least recent releasing date</Dropdown.Item>
 						</Dropdown.Menu>
 					</Dropdown>
+					
         </div>
     );
   }

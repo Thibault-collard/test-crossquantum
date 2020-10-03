@@ -1,3 +1,6 @@
+a {
+  text-decoration: none; /* no underline */
+}
 .container-movie{
 	position: relative;
   color: white;
