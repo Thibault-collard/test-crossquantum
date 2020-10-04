@@ -2,7 +2,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/Thibault-collard/test-crossquantum">
-    <img src="./client/src/QuantumMovies.png" alt="Logo" height="80">
+    <img src="./client/src/quantum-movies-logo-N&B.png" alt="Logo" height="80">
   </a>
 
   <h3 align="center"> TEST LAFINBOX CROSSQUANTUM</h3>
