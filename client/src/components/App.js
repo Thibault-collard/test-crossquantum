@@ -6,7 +6,6 @@ import store from '../store/store';
 import MovieList from './MovieList';
 import SortButton from './SortButton';
 import Container from 'react-bootstrap/Container';
-import MyListButton from './MyListButton'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 class App extends Component {
@@ -32,7 +31,7 @@ class App extends Component {
         return (
           <>
           <Container style={{maxWidth: "1555px"}}>
-              <MyListButton/>
+              
               <SortButton list={this.state.list}/>
             <MovieList list={this.state.list}/>
           </Container>

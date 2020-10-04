@@ -11,8 +11,8 @@ import Nav from "./components/Navbar"
 ReactDOM.render(
 	<div>
 		<Provider store={store}>
-			<Nav/>
 		<BrowserRouter>
+			<Nav/>
 			<Route exact path="/movies/:id" component={SinglePageMovies}/>
 			<Route exact path="/" component={App} />
 		</BrowserRouter>

@@ -6,6 +6,7 @@
     "@fortawesome/fontawesome-svg-core": "^1.2.31",
     "@fortawesome/free-solid-svg-icons": "^5.15.0",
     "@fortawesome/react-fontawesome": "^0.1.11",
+    "beauty-stars": "^1.1.0",
     "bootstrap": "^4.5.2",
     "lodash": "^4.17.20",
     "react": "^16.13.1",
@@ -15,6 +16,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "react-slick": "^0.27.11",
+    "react-star-rating": "^1.4.2",
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",
     "slick-carousel": "^1.8.1"

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Navbar from 'react-bootstrap/Navbar';
 import LogoImg from '../QuantumMovies.png';
-
+import MyListButton from './MyListButton'
 class Nav extends Component {
   render() {
     return (
@@ -14,6 +14,7 @@ class Nav extends Component {
         className="d-inline-block align-top"
       />
     	</Navbar.Brand>
+      <MyListButton/>
   	</Navbar>
     );
   }

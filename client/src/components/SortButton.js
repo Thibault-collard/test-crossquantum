@@ -20,7 +20,7 @@ class SortButton extends Component {
   render() {
     return (
         <div>
-					<Dropdown style={{display:"block",textAlign:"right",marginRight:"25px"}}>
+					<Dropdown style={{display:"block",textAlign:"right",marginRight:"25px",marginTop:"22px"}}>
 						<Dropdown.Toggle style={{backgroundColor:"rgb(168, 30, 65)",border:"0px"}}>
 							Sort by : 
 						</Dropdown.Toggle>
